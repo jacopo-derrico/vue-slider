@@ -48,6 +48,9 @@ createApp({
             this.autoplayIntervall = setInterval(() => {
                 this.nextImg()
             }, 3000)
+        },
+        stopAutoplay () {
+            clearInterval(this.autoplayIntervall)
         }
     },
     created(){
